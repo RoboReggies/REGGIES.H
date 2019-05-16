@@ -1,0 +1,22 @@
+void claw(int clawdir)
+{
+	switch (clawdir)
+{
+        case 0:
+            motor(2, 0);
+            printf("I am not moving");
+            break;
+	  case 1:
+			motor(2, 100);
+            printf("I am going forward");
+            break;
+	  case 2:
+			motor(2, -100);
+            printf("I am going backward");
+            break;
+	  default:
+			motor(2, 0);
+			printf("%d", clawdir);
+            break;
+}
+}
